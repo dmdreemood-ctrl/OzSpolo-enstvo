@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oz Spoločenstvo - Oficiálna stránka</title>
+    <!-- Web icon -->
+    <link rel="icon" href="https://placehold.co/32x32/1f2937/F8FAFC?text=Oz" type="image/x-icon">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Svetlo modrá-šedá farba pozadia */
+            color: #1f2937; /* Tmavá farba textu */
+        }
+        .social-icon:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/1f2937/F8FAFC?text=Oz+Spoločenstvo') no-repeat center center/cover;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="hero-section flex items-center justify-center text-center text-white p-4 sm:p-8 rounded-b-3xl shadow-lg">
+        <div class="space-y-4">
+            <h1 class="text-4xl sm:text-6xl font-bold leading-tight">Oz Spoločenstvo</h1>
+            <p class="text-lg sm:text-2xl font-medium">Jednota, kreativita a zábava na jednom mieste</p>
+            <div class="flex justify-center items-center space-x-4 pt-4">
+                <a href="#about" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                    Dozvedieť sa viac
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md rounded-b-xl px-4 py-2 flex justify-between items-center">
+        <a href="#" class="font-bold text-lg text-indigo-600">Oz</a>
+        <div class="hidden sm:flex space-x-6 text-sm font-semibold">
+            <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">O nás</a>
+            <a href="#social" class="text-gray-600 hover:text-indigo-600 transition">Sociálne siete</a>
+            <a href="#copyright" class="text-gray-600 hover:text-indigo-600 transition">Autorské Práva</a>
+            <a href="#notice" class="text-gray-600 hover:text-indigo-600 transition">Upozornenie</a>
+            <a href="#community" class="text-gray-600 hover:text-indigo-600 transition">Komunita</a>
+            <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">Kontakt</a>
+        </div>
+        <button id="mobile-menu-button" class="sm:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-md rounded-b-lg px-4 py-2 transition-all duration-300 ease-in-out">
+        <a href="#about" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md">O nás</a>
+        <a href="#social" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md">Sociálne siete</a>
+        <a href="#copyright" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md">Autorské Práva</a>
+        <a href="#notice" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md">Upozornenie</a>
+        <a href="#community" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md">Komunita</a>
+        <a href="#contact" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md">Kontakt</a>
+    </div>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+        <!-- O nás Section -->
+        <section id="about" class="text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">O Oz Spoločenstve</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Sme skupina nadšencov, ktorí sa spojili pod jednou značkou. Naše **Oz Spoločenstvo** je hravé a kreatívne, so silnou prítomnosťou na platformách ako **Facebook, YouTube, Roblox** a **TikTok**. Našim cieľom je vytvárať originálny a zábavný obsah pre všetkých. Pridajte sa k nám a staňte sa súčasťou našej rastúcej rodiny!
+            </p>
+        </section>
+
+        <!-- Sociálne siete Section -->
+        <section id="social" class="text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">Spojte sa s nami</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <!-- YouTube -->
+                <a href="#" class="social-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-red-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.615 3.184c-3.604-.246-11.637-.246-15.241 0-3.601.246-5.419 1.488-5.419 3.593v1.84c0 1.996 1.818 3.298 5.419 3.594 3.604.246 11.637.246 15.241 0 3.601-.246 5.419-1.488 5.419-3.593v-1.84c0-1.996-1.818-3.298-5.419-3.594zm-14.885 8.441a1.21 1.21 0 01-1.21-1.21v-3.63a1.21 1.21 0 011.21-1.21h12.12c.669 0 1.21.541 1.21 1.21v3.63a1.21 1.21 0 01-1.21 1.21h-12.12zM12 15.416a3.416 3.416 0 100 6.832 3.416 3.416 0 000-6.832z"></path>
+                    </svg>
+                    <h3 class="text-lg font-bold">YouTube</h3>
+                    <p class="text-sm text-gray-500">Sledujte naše videá</p>
+                </a>
+                <!-- Facebook -->
+                <a href="#" class="social-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-blue-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.397 2.003L15.69 0h2.986l-3.224 4.542h3.224l-3.224 4.542h3.224l-3.224 4.542h3.224l-3.224 4.542h-3.224l3.224-4.542h-3.224l3.224-4.542h-3.224l-3.224 4.542h-3.224l3.224-4.542h-3.224l3.224-4.542h3.224l-3.224 4.542z"></path>
+                    </svg>
+                    <h3 class="text-lg font-bold">Facebook</h3>
+                    <p class="text-sm text-gray-500">Staňte sa fanúšikom</p>
+                </a>
+                <!-- TikTok -->
+                <a href="#" class="social-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-black" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.525 2.001a1.25 1.25 0 00-1.25 1.25v8.324a1.25 1.25 0 002.5 0V3.251a1.25 1.25 0 00-1.25-1.25zM15.025 2.001a1.25 1.25 0 00-1.25 1.25v8.324a1.25 1.25 0 002.5 0V3.251a1.25 1.25 0 00-1.25-1.25zM17.525 2.001a1.25 1.25 0 00-1.25 1.25v8.324a1.25 1.25 0 002.5 0V3.251a1.25 1.25 0 00-1.25-1.25zM20.025 2.001a1.25 1.25 0 00-1.25 1.25v8.324a1.25 1.25 0 002.5 0V3.251a1.25 1.25 0 00-1.25-1.25z"></path>
+                        <path d="M12.001 2.001a1.25 1.25 0 00-1.25 1.25v8.324a1.25 1.25 0 002.5 0V3.251a1.25 1.25 0 00-1.25-1.25zM9.501 2.001a1.25 1.25 0 00-1.25 1.25v8.324a1.25 1.25 0 002.5 0V3.251a1.25 1.25 0 00-1.25-1.25zM7.001 2.001a1.25 1.25 0 00-1.25 1.25v8.324a1.25 1.25 0 002.5 0V3.251a1.25 1.25 0 00-1.25-1.25zM4.501 2.001a1.25 1.25 0 00-1.25 1.25v8.324a1.25 1.25 0 002.5 0V3.251a1.25 1.25 0 00-1.25-1.25z"></path>
+                    </svg>
+                    <h3 class="text-lg font-bold">TikTok</h3>
+                    <p class="text-sm text-gray-500">Sledujte naše klipy</p>
+                </a>
+                <!-- Roblox -->
+                <a href="#" class="social-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                        <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
+                    </svg>
+                    <h3 class="text-lg font-bold">Roblox</h3>
+                    <p class="text-sm text-gray-500">Hrajte s nami</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Autorské Práva Section -->
+        <section id="copyright" class="text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Autorské Práva</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Každý deň usilovne vyhľadávame autorské práva, aby sme ochránili hudbu a kreatívny obsah našich klientov. Vyvinuli sme vlastný systém **ID Content**, ktorý automaticky skenuje sociálne siete a iné platformy pre neoprávnené použitie.
+            </p>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+                Naša spoločnosť má sídlo v **Bratislave**, kde poskytujeme komplexné riešenia pre ochranu vašich autorských diel.
+            </p>
+        </section>
+
+        <!-- Official Notice Section -->
+        <section id="notice" class="text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">🔴 Oficiálne upozornenie na porušovanie autorských práv</h2>
+            <div class="text-left text-gray-600 max-w-3xl mx-auto space-y-4">
+                <p>Na platforme Facebook sme identifikovali účty, ktoré sa dopúšťajú vážneho porušovania autorských práv a opakovane používajú cudzie diela bez súhlasu vlastníkov. Konkrétne ide o nasledovné profily:</p>
+                <p><strong>BoosingBassTV</strong><br><strong>Walerian Stareček</strong><br><strong>KRAL HOROROVIEK</strong></p>
+                <p>Tieto účty boli zachytené našou technológiou ID Content, ktorá slúži na automatizované vyhľadávanie a identifikáciu neoprávnene zdieľaného obsahu.</p>
+                <p class="font-bold">⚖️ O čom je porušenie</p>
+                <p>Autorské práva chránia každého tvorcu – hudobníka, video tvorcu, fotografa či spisovateľa – pred tým, aby niekto iný neoprávnene využíval ich prácu.</p>
+                <p>Keď užívatelia ako **BoosingBassTV**, **Walerian Stareček** a **KRAL HOROROVIEK** zdieľajú, kopírujú alebo vydávajú cudzie diela za svoje vlastné, dochádza k neoprávnenému zásahu do práv tvorcov. To je nielen neetické, ale aj nezákonné.</p>
+                <p class="font-bold">🔍 Naša technológia ID Content</p>
+                <p>Systém ID Content neustále monitoruje obsah na sociálnych sieťach. Dokáže:</p>
+                <p>— odhaliť videá, hudbu, texty a obrázky chránené autorským právom,<br>— porovnať ich s originálnymi databázami,<br>— nahlásiť a zdokumentovať porušenia,<br>— pripraviť podklady na právne a technické zásahy.</p>
+                <p>Vďaka tomuto systému sme jednoznačne potvrdili, že práve uvedené účty patria medzi tých, ktorí vedome alebo nevedome porušujú autorské práva.</p>
+                <p class="font-bold">🧒 Ochrana maloletých</p>
+                <p>Špeciálne upozorňujeme na to, že užívatelia mladší ako 18 rokov, ktorí by sa dopustili podobného porušenia, budú mať účty okamžite zablokované. Tento krok nie je trest, ale ochrana – má zabezpečiť, aby sa mladí užívatelia učili kráčať správnou cestou, rešpektovali zákony a rozumeli tomu, že kradnúť cudziu tvorbu nie je správne.</p>
+                <p class="font-bold">⚠️ Dôsledky pre menovaných užívateľov</p>
+                <p>— **BoosingBassTV** – zaznamenané opakované používanie cudzieho obsahu, odporúčané sankcie: blokácia účtu a preverenie obsahu.<br>— **Walerian Stareček** – neoprávnené zdieľanie a vydávanie cudzieho obsahu za vlastný, odporúčané sankcie: blokácia účtu a odstránenie obsahu.<br>— **KRAL HOROROVIEK** – šírenie chráneného obsahu vo veľkom rozsahu, odporúčané sankcie: trvalé zablokovanie účtu.</p>
+                <p class="font-bold">✅ Výzva pre všetkých užívateľov</p>
+                <p>Rešpektujte autorov a ich práca bude chránená. Porušovanie pravidiel vedie len k zablokovaniu účtu a strate dôveryhodnosti. Sociálna sieť a naša technológia ID Content budú naďalej dohliadať na dodržiavanie pravidiel, aby bola komunita bezpečná, spravodlivá a etická.</p>
+                <p class="font-bold">📢 Záver</p>
+                <p>Toto upozornenie má za cieľ poučiť, nie zastrašiť. Menovaní užívatelia **BoosingBassTV**, **Walerian Stareček** a **KRAL HOROROVIEK** sú dôkazom toho, že porušovanie autorských práv nezostane bez odozvy. Každý ďalší užívateľ, ktorý sa pokúsi kradnúť cudziu tvorbu, bude odhalený a potrestaný.</p>
+                <p>Chránime autorov, chránime maloletých a chránime budúcnosť internetu.</p>
+            </div>
+        </section>
+
+        <!-- Komunita Section -->
+        <section id="community" class="text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Naša Komunita</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Pridajte sa k našej komunite a spojte sa s ostatnými fanúšikmi! Naše komunitné fórum a Discord server sú skvelým miestom na diskusiu, zdieľanie nápadov a hranie hier.
+            </p>
+        </section>
+
+        <!-- Kontakt Section -->
+        <section id="contact" class="text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Kontaktujte nás</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                Máte otázky alebo návrhy? Radi sa s vami spojíme!
+            </p>
+            <form class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+                <div class="mb-4">
+                    <input type="text" placeholder="Vaše meno" class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-indigo-500 transition" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Váš email" class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-indigo-500 transition" required>
+                </div>
+                <div class="mb-6">
+                    <textarea placeholder="Vaša správa" rows="4" class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-indigo-500 transition" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 transform hover:scale-105">
+                    Odoslať správu
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 mt-12 rounded-t-3xl shadow-inner text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-gray-500 text-sm">© 2024 Oz Spoločenstvo. Všetky práva vyhradené.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
